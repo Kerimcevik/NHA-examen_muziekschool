@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+    background-color: rgba(245, 113, 20, 255);
+    color: white;
+}
+
+.header-title,
+.header-subtitle {
+    grid-column: span 12;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+.header-subtitle {
+    font-weight: normal;
+    margin-bottom: 3%;
+}
+
+.navbar {
+    grid-column: span 12;
+    background-color: rgba(189, 86, 13, 255);
+    border-bottom: rgba(255, 215, 0, 255) solid 4px;
+}
+
+.navlist {
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+.navlist li {
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.navlist li:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: white;
+}
+
+.right-text, .left-text {
+    font-size: 20px;
+}
+
+.left {
+    grid-column: span 3;
+    background-color: rgba(255, 183, 133, 255);
+}
+
+.left-title,
+.left-text {
+    margin: 5%;
+}
+
+.radio-kid {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.right {
+    grid-column: span 9;
+}
+
+.right-title {
+    color: rgba(188, 85, 14, 255);
+    display: grid;
+}
+
+.hannah {
+    width: 30%;
+    float: right;
+}
+
+.jesse {
+    width: 30%;
+    margin-left: 4%;
+    margin-bottom: 2%;
+    float: left;
+}
+
+.right-title,
+.right-subtitle,
+.right-text {
+    margin-left: 2%;
+}
+
+.right-title {
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.right-subtitle,
+.right-text {
+    margin-bottom: 2%;
+}
+
+.footer {
+    background-color: rgba(209, 95, 15, 255);
+}
+
+.footer-text {
+    padding: 2%;
+    grid-column: span 12;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .left,
+    .right {
+        grid-column: span 12;
+    }
+
+    .navlist {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
